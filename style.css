@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Josefin Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.main {
+    background-image: url(./Screenshot_2025-08-28_224513-removebg-preview.png);
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(250, 81, 4, 0.4) 65%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+.box {
+     border: 1px solid rgb(11, 1, 1);
+    width: 187px;
+    height: 31px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    margin: 2px;
+    text-align: center;
+}
+.box:hover{
+    color: red;
+  border: 1px solid rgb(116, 22, 22);
+ border-radius: 13px;
+ color: #fff;
+ background: #fa510f;
+ padding: 0px 12px;
+ border: none;
+}
+.bt{
+    display: inline-block; width: 234px; height: 50px; 
+          background: #07073a; color: #fff; 
+          border: none; border-radius: 10px; 
+          text-align: center; line-height: 50px; 
+          text-decoration: none;
+        ;
+
+}
+.bt:hover{
+    background-color: #fa510f
+;
+
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 300px; /* set the same height for all images */
+    object-fit: cover; /* crop & fill evenly */
+    border-radius: 10px; /* optional: rounded corners */
+  }
+
+  .a img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%S;
+    object-fit: cover;
+    border-radius: 10px;
+
+
+  }
