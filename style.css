@@ -70,3 +70,13 @@ body{
 
 
   } */
+.row input {
+  width: 70%;
+  padding: 10px 14px;
+  border: 1px solid #fa510f;
+  border-radius: 35px;
+  outline: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto 15px auto; /* 👈 centers input and keeps bottom gap */
+}
