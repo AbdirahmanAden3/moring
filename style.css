@@ -84,3 +84,15 @@ body{
 ul li a {
   text-decoration: none;
 }
+
+
+ul li a:hover {
+  color: #fa510f;
+  padding: 10px;
+  font-size: 1rem;
+
+
+}
+  .dropdown-toggle::after {
+    display: none !important;
+  }

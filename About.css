@@ -1,0 +1,10 @@
+.main {
+    background-image: url(./scren.png);
+    /* background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(250, 81, 4, 0.4) 65%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}

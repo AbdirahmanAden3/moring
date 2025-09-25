@@ -13,16 +13,17 @@
 </head>
 <body>
 
-<div>
-  <!-- Top header -->
+
    <div class="top" style="position: fixed; width: 100%; z-index: 1000;" >
-
-
-  <div class="header py-1 " style="background: #021642;">
+  <!-- Top header -->
+  <div class="header py-1" style="background: #021642;">
     <p class="text-white text-center mb-0 fs-6">
       Stay up to date with our Community
     </p>
   </div>
+
+
+  
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary" >
@@ -43,21 +44,11 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-danger" aria-current="page" href="#" style="font-size: 20px;">Home</a>
+            <a class="nav-link active text-danger" aria-current="page" href="./index.html">Home</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="./course.html" style="font-size: 20px;">Courses</a></li>
-         <!-- Default dropend button -->
-         <div class="dropdown"  >
-  <button class="btn btn- dropdown-toggle" style="padding: 10px;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    About us
-  </button>
-  <ul class="dropdown-menu fw-bold  " style="width: 336px; height: 175;">
-    <li><a class="dropdown-item " href="./About.html" >About Us</a></li>
-    <li><a class="dropdown-item" href="#">Career</a></li>
-    <li><a class="dropdown-item" href="#">FAQS</a></li>
-  </ul>
-</div>
-          <li class="nav-item"><a class="nav-link" href="#" style="font-size: 20px;">Financial Aid</a></li>
+          <li class="nav-item"><a class="nav-link" href="./course.html">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="./About.css">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Financial Aid</a></li>
         </ul>
         <div class="d-flex align-items-center ms-3">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -682,7 +673,10 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
     <!-- course.html -->
-
+<script>
+  // Change the URL to hide course.html
+  window.history.pushState({}, '', '/course');
+</script>
 
 </body>
 
