@@ -87,12 +87,14 @@ ul li a {
 
 
 ul li a:hover {
-  color: #fa510f;
-  padding: 10px;
-  font-size: 1rem;
+  color: #fa510f
+
+  
 
 
 }
   .dropdown-toggle::after {
     display: none !important;
   }
+
+  
