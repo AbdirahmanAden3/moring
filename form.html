@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="header">
+                <div class="logo">A</div>
+                <h1 class="title">Reserve Yours Today</h1>
+                <p class="subtitle">Be among the first to experience the future of audio</p>
+            </div>
+
+            <div class="product-preview">
+                <div class="product-name">Enter your Details</div>
+                <!-- <div class="product-price">$299 <span style="text-decoration: line-through; opacity: 0.7; font-size: 1.2rem;">$399</span></div>
+                <div class="product-discount">Limited pre-order discount • Ships March 2025</div> -->
+            </div>
+
+            <form id="preorderForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label class="form-label">First Name</label>
+                        <input type="text" class="form-input" name="firstName" placeholder="John" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Last Name</label>
+                        <input type="text" class="form-input" name="lastName" placeholder="Doe" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label class="form-label">Email Address</label>
+                        <input type="email" class="form-input" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Phone Number</label>
+                        <input type="tel" class="form-input" name="phone" placeholder=" 123-4567">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Address</label>
+                        <input type="text" class="form-input" name="address" placeholder="address">
+                    </div>
+
+                    <div class="mb-3">
+  <label class="form-label d-block">Gender</label>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+    <label class="form-check-label" for="male">Male</label>
+  </div>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+    <label class="form-check-label" for="female">Female</label>
+  </div>
+</div>
+
+                     
+                    <!-- <div class="form-group">
+                        <label class="form-label">Color Preference</label>
+                        <select class="form-select" name="color" required>
+                            <option value="">Choose color</option>
+                            <option value="midnight">Midnight Black</option>
+                            <option value="pearl">Pearl White</option>
+                            <option value="rose">Rose Gold</option>
+                            <option value="silver">Space Silver</option>
+                        </select>
+                    </div> -->
+
+                    <script>
+                             // Form validation and submission
+        document.getElementById('preorderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData);
+            
+            // Basic validation
+            const requiredFields = ['firstName', 'lastName', 'email', 'color'];
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                const input = document.querySelector([name="${field}"]);
+                if (!data[field]) {
+                    input.style.borderColor = 'var(--warning)';
+                    isValid = false;
+                } else {
+                    input.style.borderColor = 'var(--border)';
+                }
+            });
+            
+            if (isValid) {
+                // Simulate API call
+                const submitBtn = document.querySelector('.submit-btn');
+                submitBtn.textContent = 'Processing...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    document.getElementById('successMessage').style.display = 'block';
+                    submitBtn.style.display = 'none';
+                    
+                    // Log the order data (in real app, this would go to your backend)
+                    console.log('Pre-order submitted:', {
+                        ...data,
+                        quantity: parseInt(data.quantity),
+                        total: document.getElementById('total').textContent,
+                        timestamp: new Date().toISOString()
+                    });
+                }, 1500);
+            }
+        });
+
+        // Add smooth focus animations
+        document.querySelectorAll('.form-input, .form-select').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.style.transform = 'scale(1.02)';
+            });
+            
+            input.addEventListener('blur', function() {
+                this.parentElement.style.transform = 'scale(1)';
+            });
+        });
+
+        // Initialize quantity change handler
+        document.getElementById('quantity').addEventListener('change', updateTotal);
+        
+        // Add loading state to form inputs
+        document.querySelectorAll('.form-input').forEach(input => {
+            input.addEventListener('input', function() {
+                if (this.value) {
+                    this.style.backgroundColor = 'rgba(72, 187, 120, 0.05)';
+                } else {
+                    this.style.backgroundColor = 'var(--surface)';
+                }
+            });
+        });
+                    </script>
+    
+</body>
+</html>
