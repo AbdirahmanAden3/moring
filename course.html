@@ -13,17 +13,16 @@
 </head>
 <body>
 
-
-   <div class="top" style="position: fixed; width: 100%; z-index: 1000;" >
+<div>
   <!-- Top header -->
-  <div class="header py-1" style="background: #021642;">
+   <div class="top" style="position: fixed; width: 100%; z-index: 1000;" >
+
+
+  <div class="header py-1 " style="background: #021642;">
     <p class="text-white text-center mb-0 fs-6">
       Stay up to date with our Community
     </p>
   </div>
-
-
-  
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary" >
@@ -44,11 +43,23 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-danger" aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link active text-danger" aria-current="page" href="#" style="font-size: 20px;">Home</a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="./course.html">Courses</a></li>
-          <li class="nav-item"><a class="nav-link" href="./About.html"></a></li>
-          <li class="nav-item"><a class="nav-link" href="./fincancial.html">Financial Aid</a></li>
+          <li class="nav-item"><a class="nav-link" href="./course.html" style="font-size: 20px;">Courses</a></li>
+         <!-- Default dropend button -->
+         <div class="dropdown"  >
+  <button class="btn btn- dropdown-toggle" style="padding: 10px;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    About us
+  </button>
+  <ul class="dropdown-menu fw-bold  " style="width: 336px; height: 175;">
+    <li><a class="dropdown-item " href="./About.html" >About Us</a></li>
+    <li><a class="dropdown-item" href="./careers.html">Career</a></li>
+    <li><a class="dropdown-item" href="./faqs.html">FAQS</a></li>
+  </ul>
+</div>
+          <li class="nav-item"><a class="nav-link" href="./fincancial.html" style="font-size: 20px;">Financial Aid</a></li>
+          <li class="nav-item"><a class="nav-link" href="./coparate.html" style="font-size: 20px;">Corporate</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Community.html" style="font-size: 20px;">Community</a></li>
         </ul>
         <div class="d-flex align-items-center ms-3">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -60,8 +71,8 @@
   </div>
 
   <!-- Hero -->
-  <div class="main text-center py-5">
-    <h1>Shape Your Future with Africa's <br> Top Tech Bootcamp</h1>
+  <div class="main  text-center py-5">
+    <h1 class="p-5 mt-4">Shape Your Future with Africa's <br> Top Tech Bootcamp</h1>
     <p>
       Whether you are a high school graduate, a university student or working professional looking <br/> to upskill or
       switch to <br/> Moringa School offers world-class training tailored to your journey. We meet you where
@@ -90,28 +101,54 @@
   </div>
 
   <!-- Boxes -->
-  <div class="container mt-4">
-    <div class="row g-3 text-center">
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="box  border rounded shadow-sm">Software Engineering</div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="box  border rounded shadow-sm">Data Science</div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="box  border rounded shadow-sm">Cyber Security</div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="box  border rounded shadow-sm">Product Design</div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="box  border rounded shadow-sm">AI</div>
-      </div>
-      <div class="col-6 col-md-4 col-lg-2">
-        <div class="box  border rounded shadow-sm">Tech Lead</div>
+<div class="container mt-5">
+  <div class="row g-4 text-center">
+    
+    <!-- Program 1 -->
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="box border rounded-3  shadow-sm bg-white h-75 d-flex align-items-center justify-content-center">
+        <span class="fw-semibold">Software Engineering</span>
       </div>
     </div>
+    
+    <!-- Program 2 -->
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="box border rounded-3  shadow-sm bg-white h-75 d-flex align-items-center justify-content-center">
+        <span class="fw-semibold">Data Science</span>
+      </div>
+    </div>
+    
+    <!-- Program 3 -->
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="box border rounded-3  shadow-sm bg-white h-75 d-flex align-items-center justify-content-center">
+        <span class="fw-semibold">Cyber Security</span>
+      </div>
+    </div>
+    
+    <!-- Program 4 -->
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="box border rounded-3  shadow-sm bg-white h-75 d-flex align-items-center justify-content-center">
+        <span class="fw-semibold">Product Design</span>
+      </div>
+    </div>
+    
+    <!-- Program 5 -->
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="box border rounded-3 p-3 shadow-sm bg-white h-75 d-flex align-items-center justify-content-center">
+        <span class="fw-semibold">AI</span>
+      </div>
+    </div>
+    
+    <!-- Program 6 -->
+    <div class="col-6 col-md-4 col-lg-2">
+      <div class="box border rounded-3 p-3 shadow-sm bg-white h-75 d-flex align-items-center justify-content-center">
+        <span class="fw-semibold">Tech Lead</span>
+      </div>
+    </div>
+
   </div>
+</div>
+
 
   <!-- Cards -->
   <div class="container mt-5">
@@ -123,14 +160,20 @@
             <h6 class="card-title text-danger">Introduction to Software Engineering</h6>
             <p class="card-text">Some quick example and make up the bulk of the card's content.</p>
             <div class="d-flex flex-wrap ; d-flex justify-content-center">
-              <button class="btn btn-primary" style="margin:1px
-              ;">Full time In-person</button>
+             <a href="./form.html">
+              <button class="btn btn-primary">Full time In-person</button>
               <button class="btn btn-primary">Full time Remote</button>
+            </a>
+            
             </div>
             <hr class="my-3 text-danger">
-            <div class="text-center">
-              <button class="btn" style="background:#fa510f; color:#fff;">Learn More</button>
-            </div>
+         <div class="text-center">
+  <a href="software.html" class="btn px-4 py-2" 
+     style="background:#fa510f; color:#fff; border-radius: 8px; text-decoration: none;">
+    Learn More
+  </a>
+</div>
+
           </div>
         </div>
       </div>
@@ -141,13 +184,18 @@
             <h6 class="card-title text-danger">Introduction to Software Engineering</h6>
             <p class="card-text">Some quick example and make up the bulk of the card's content.</p>
             <div class="d-flex flex-wrap gap-2 d-flex justify-content-center">
+             <a href="./form.html">
               <button class="btn btn-primary">Full time In-person</button>
               <button class="btn btn-primary">Full time Remote</button>
+            </a>
             </div>
             <hr class="my-3 text-danger">
-            <div class="text-center">
-              <button class="btn" style="background:#fa510f; color:#fff;">Learn More</button>
-            </div>
+                   <div class="text-center">
+  <a href="software.html" class="btn px-4 py-2" 
+     style="background:#fa510f; color:#fff; border-radius: 8px; text-decoration: none;">
+    Learn More
+  </a>
+</div>
           </div>
         </div>
       </div>
@@ -158,13 +206,18 @@
             <h6 class="card-title text-danger">Introduction to Software Engineering</h6>
             <p class="card-text">Some quick example and make up the bulk of the card's content.</p>
             <div class="d-flex flex-wrap gap-2 d-flex justify-content-center">
+              <a href="./form.html">
               <button class="btn btn-primary">Full time In-person</button>
               <button class="btn btn-primary">Full time Remote</button>
+            </a>
             </div>
             <hr class="my-3 text-danger">
-            <div class="text-center">
-              <button class="btn" style="background:#fa510f; color:#fff;">Learn More</button>
-            </div>
+                    <div class="text-center">
+  <a href="software.html" class="btn px-4 py-2" 
+     style="background:#fa510f; color:#fff; border-radius: 8px; text-decoration: none;">
+    Learn More
+  </a>
+</div>
           </div>
         </div>
       </div>
@@ -580,11 +633,10 @@
       <!-- Column 1: Logo + Social -->
       <div class="col-md-4 col-sm-12 mb-4">
         <img src="logo-white.png" alt="Logo" style="height:3rem; display:block; margin-bottom:1rem;">
-        <div class="d-flex gap-3">
+        <div class="d-flex gap-3" style="border-bottom: 0.2rem solid red; width: 4rem;">
           <a href="#" class="text-white social-link"><i class="fa-brands fa-facebook"></i></a>
           <a href="#" class="text-white social-link"><i class="fa-brands fa-twitter"></i></a>
           <a href="#" class="text-white social-link"><i class="fa-brands fa-linkedin"></i></a>
-          
         </div>
          <ul class="list-unstyled" style="text-decoration: none;">
           <li><a href="#" class="footer-link text-white">Course 1</a></li>
@@ -654,9 +706,6 @@
     <small>© 2025 All Rights Reserved | Moringa School</small>
   </div>
 </footer>
-
-
-
 <!-- ends herer -->
 
 </div>
@@ -673,10 +722,7 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
     <!-- course.html -->
-<script>
-  // Change the URL to hide course.html
-  window.history.pushState({}, '', '/course');
-</script>
+
 
 </body>
 
